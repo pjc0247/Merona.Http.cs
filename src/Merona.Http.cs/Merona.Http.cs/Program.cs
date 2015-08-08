@@ -16,7 +16,7 @@ namespace Merona.Http.cs
         public class MyHttpDelegate : HttpMachine.IHttpParserHandler
         {
             private HttpMarshaler parent { get; set; }
-            private Dictionary<String, String> data;
+            private Dictionary<String, String> data { get; set; }
 
             public MyHttpDelegate(HttpMarshaler parent)
             {
